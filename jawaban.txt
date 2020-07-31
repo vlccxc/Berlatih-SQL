@@ -52,7 +52,7 @@ WHERE price > 1000000
 
 SELECT *
 FROM items
-WHERE name LIKE 'uniklo'
+WHERE name LIKE 'uniklo%'
 
 - menampilkan data items join dengan kategori
 SELECT * 
@@ -63,4 +63,4 @@ ON i.category_id = c.id
 SOAL 5. MENGUBAH DATA DARI DATABASE
 UPDATE items
 SET price = '2500000'
-WHERE name LIKE  'sumsang'
+WHERE name LIKE  'sumsang%'
