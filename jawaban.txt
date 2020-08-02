@@ -55,7 +55,7 @@ FROM items
 WHERE name LIKE 'uniklo%'
 
 - menampilkan data items join dengan kategori
-SELECT * 
+SELECT items.name, items.description, items.price, items.stock, items.category_id, categories.id as kategori 
 FROM items i
 JOIN categories c
 ON i.category_id = c.id
